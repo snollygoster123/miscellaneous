@@ -4,7 +4,7 @@ set whichwrap=b,s,<,>,[,]	" Line break traversal
 
 " Vundle setup, used to manage plugins from vim by typing :BundleList etc
 filetype off
-set rtp+=~/.vim/bundle/vundle
+set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#rc()
 Bundle 'gmarik/vundle'
 " Put other bundles below here
@@ -56,3 +56,10 @@ set scrolloff=3
 set showcmd			" Show the command being typed
 set showfulltag			" Show full completion tags
 set showmode			" Always show the mode
+
+" Toggle spell checking with ,s
+let mapleader = ","
+nmap <silent> <leader>s :set spell!<CR>
+
+" Set language
+set spelllang=en_gb
